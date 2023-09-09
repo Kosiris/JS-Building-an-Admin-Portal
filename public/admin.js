@@ -1,7 +1,7 @@
 
 // Your Code Here
 async function getBooks(){
-    let response = await fetch(' http://localhost:3001/listBooks',{
+    let response = await fetch('http://localhost:3000/listBooks',{
         method: 'GET',
         headers: null,
         body: null,
@@ -11,7 +11,7 @@ async function getBooks(){
 }
 
 async function updateBook(){
-    let response = await fetch('http://localhost:3001/updateBook', {
+    let response = await fetch('http://localhost:3000/updateBook', {
     method: 'PATCH',
     headers: {
         'Content-type': 'application/json'
